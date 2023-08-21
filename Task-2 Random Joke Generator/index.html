@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>Joke Generator</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1>Randon Joke Generator</h1>
+    </div>
+    <div class="main">
+        <div class="category-section">
+            <form action="">
+                <h2>Choose a category:</h2>
+                <div class="input-wrapper">
+                    <input type="radio" id="Any" name="category" value="Any" checked>
+                    <label for="Any">Any</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Programming" name="category" value="Programming">
+                    <label for="Programming">Programming</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Miscellaneous" name="category" value="Miscellaneous">
+                    <label for="Misc">Misc</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Dark" name="category" value="Dark">
+                    <label for="Dark">Dark</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Pun" name="category" value="Pun">
+                    <label for="Pun">Pun</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Spooky" name="category" value="Spooky">
+                    <label for="Spooky">Spooky</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input type="radio" id="Christmas" name="category" value="Christmas">
+                    <label for="Christmas">Christmas</label><br>
+                </div>
+            </form>
+        </div>
+        <div class="wrapper">
+        <span>&#128514</span>
+        <p id="joke"></p>
+        <button id="btn">Get Random Joke</button>
+    </div>
+    </div>
+
+    
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

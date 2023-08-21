@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+}
+
+.heading {
+    font-size: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+
+
+body {
+    background-color: #fab22e;
+}
+
+.wrapper {
+    width: 80vmin;
+    padding: 50px 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #15151a;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgba(97, 63, 0, .4);
+}
+
+span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+}
+
+p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 35px;
+    margin: 30px 0;
+    opacity: 0;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+button {
+    display: block;
+    background-color: #fab22e;
+    border: none;
+    padding: 5px;
+    color: #171721;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.category-section {
+    /* position: absolute;
+    left: 15%;
+    top: 25%; */
+    display: flex;
+    height: 50vmin;
+    flex-direction: column;
+    color: #fff;
+    background-color: #15151a;
+    border-radius: .5em;
+    width: 20%;
+}
+
+.category-section h2 {
+    font-weight: 400;
+    margin: 15px 15px;
+}
+
+.input-wrapper {
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 2em;
+    width: 2em;
+    background-color: #d5d5d5;
+    border-radius: .5em;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px;
+}
+
+label {
+    color: #4c4c4c;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+input[type="radio"]:after {
+
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 1.5em;
+    display: none;
+}
+
+input[type="radio"]:hover {
+    background-color: #a5a5a5;
+}
+
+input[type="radio"]:checked {
+    background-color: #fab22e;
+}
+
+input[type="radio"]:checked::after {
+    display: block;
+}
+
+/* @media (min-width: 700px){
+    .wrapper{
+        left: 65%;
+    }
+
+    .category-section{
+        top: 10%;
+        left: 10%;
+    }
+} */
+
+@media (max-width:1025px) {
+
+    .wrapper {
+        width: 60vmin;
+    }
+
+    .category-section {
+        height: 35vmax;
+        width: 25%;
+    }
+
+}
+
+@media (max-width:770px) {
+
+    .wrapper {
+        width: 50vmin;
+    }
+
+    .category-section {
+        height: 50vmax;
+        width: 30%;
+    }
+
+}
+
+@media (max-width:753px) {
+
+    .wrapper {
+        width: 50vmin;
+    }
+
+    .category-section {
+        height: 55vmin;
+        width: 30%;
+    }
+
+}
+
+@media (max-width:660px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 80vmin;
+    }
+
+    .category-section {
+        height: 55vmin;
+        width: 50%;
+        align-items: center;
+        width: 76%;
+    }
+
+}
+
+@media (max-width:616px) {
+    .category-section {
+        height: 60vmin;
+    }
+}
+
+@media (max-width:562px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .category-section {
+        font-size: 15px;
+        height: 60vmin;
+    }
+}
+
+@media(max-width:524px) {
+
+    .category-section {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:426px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .main {
+        top: 60%;
+    }
+
+    .category-section {
+        height: 40vmax;
+        width: 76%;
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width:392px) {
+
+    .main {
+        top: 55%;
+    }
+
+    .category-section {
+        height: 35vmax;
+    }
+}
+
+
+@media(max-width:376px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .main{
+        top: 65%;
+    }
+
+    .category-section {
+        height: 40vmax;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/logo.png">
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.Apple').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <section class="main">
+        <div class="circle"></div>
+        <header>
+        <a href="#" ><img src="Images/logo.png" class="logo" alt="logo.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#specs">Specs</a></li>
+            <li><a href="#newsletter-section">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Adventure awaits.<br><span>Apple Watch Ultra</span></h2>
+            <p>Meet the most rugged and capable Apple Watch ever. With a robust titanium case, precision dual-frequency GPS,
+                up to 36 hours of battery life, the freedom of cellular,and three specialized bands made for athletes and 
+                adventurers of all kinds.</p>
+            <a href="#details">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="Images/img1.png" class="Apple" alt="Watch Ultra">
+        </div>
+    </div>
+    <ul class="thumb">
+        <div class="img-wrapper">
+            <li><img src="Images/Midnight.png" onclick="imgSlider('Images/img1.png') ;changeCircleColor('#333')" alt=""></li>
+            <li><img src="Images/White.png" onclick="imgSlider('Images/White.png') ;changeCircleColor('#d8d3d3')" alt=""></li>
+            <li><img src="Images/Pink.png" onclick="imgSlider('Images/Pink.png') ;changeCircleColor('#fbc7b6d5')" alt=""></li>
+        </div>
+    </ul>
+    </section>
+    <section id="details">
+        <div class="details-page">
+            <p>
+                The biggest and brightest Apple Watch display. The Always-On Retina display is 2000 nits at its peak and twice as bright
+                as any other Apple Watch. The bigger display provides more room for workout metrics and detail-packed watch faces. 
+                The Wayfinder face lets you rotate the Digital Crown to activate <span>Night Mode for better viewing in low light
+                situations.</span>
+            </p>
+            <p>
+                To build the ultimate sports watch, we crafted every element with painstaking attention to detail for unparalleled performance.
+                Titanium strikes the perfect balance between weight, ruggedness, and corrosion resistance. The case rises up to surround the flat
+                sapphire crystal and protect it from edge impacts.The Digital Crown is larger and the side button is raised from the case,
+                making them easier to use while you're wearing gloves.
+            </p>
+        </div>
+        <div class="watch-wrapper">
+            <img src="Images/display.png" alt="">
+        </div>
+        <div class="btn-wrapper">
+            <a href="#specs">Full &nbsp;  Specifications &#8659</a>
+        </div>
+    </section>
+
+    <div id="specs">
+
+        <div class="specs-img">
+            <img src="Images/Specs.png" alt="">
+        </div>
+
+        <div class="specs-details">
+            <h2>Specifications</h2>
+
+            <h3>Display</h3>
+                <li>49mm</li>
+                <li>Always-On Retina LTPO OLED display</li>
+
+            <h3>Chip</h3>
+            <li>S8 SiP with 64-bit dual-core processor</li>
+            <li>W3 Apple wireless chip</li>
+            <li>U1 chip (Ultra Wideband)</li>
+            <h3>Connectivity</h3>
+            <li>4G LTE and UMTS,GPS + Cellular model</li>
+            <li>Bluetooth 5.3</li>
+            <li>Wifi</li>
+                802.11b/g/n 2.4GHz and 5GHz        
+            <h3>Power</h3>
+            <li>Built-in rechargeable lithium-ion battery</li>
+                Up to 36 hours8
+                Up to 18 hours LTE
+            <li>USB-C magnetic fast-charging cable</li>
+            <h3>Environmental Features</h3>
+            <li>100% recycled tungsten in the Taptic Engine</li>
+            <li>100% recycled rare earth elements in all magnets</li>
+            <li>100% recycled tin in the SiP</li>
+            <h3>In the Box</h3>
+            <li>Apple Watch Ultra</li>
+            <li>Band/Loop</li>
+            <li>Apple Watch Magnetic Fast Charger to USB-C Cable (1m)</li>
+        </div>
+    </div>
+
+    <section id="newsletter-section">
+        <div class="newsletter">
+            <h1>Get Newsletter</h1>
+            <hr>
+            <p>Enter your name and email address to recieve latest news and info about our product</p>
+            <form >
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <br>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <i class="fa-solid fa-location-dot"></i><span> Address:</span><p>One Apple Park Way; Cupertino, CA 95014, U.S.A.</p>
+            <i class="fa-solid fa-phone"></i><span> Phone:</span><p>000800 040 1977</p>
+            <i class="fa-solid fa-envelope"></i><span> Email:</span><p>contact@apple.com</p>
+            <i class="fa-solid fa-earth-asia"></i><span> Website:</span><p>https://www.apple.com</p>
+        </div>
+        <footer>
+                <p>&copy; 2023 Apple Inc. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
